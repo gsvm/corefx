@@ -125,13 +125,14 @@ For Loongnix 1.0 crossrootfs:
 
 ```
 docker run --rm -v `pwd`:/corefx -w /corefx -e ROOTFS_DIR=/crossrootfs/mips64el_loongnix aoqi/dotnet-buildtools:x86_64-ubuntu-16.04-c103199-20180628134544-upstream-cross-mips64el-corefx ./src/Native/build-native.sh mips64 debug cross ignorewarnings cmakeargs -DOBJCOPY=/usr/lib/llvm-6.0/bin/llvm-objcopy
---> Output goes to artifacts/bin/runtime/netcoreapp-Linux-Debug-mips64
+--> Output goes to artifacts/bin/native/Linux-mips64-Debug
 ```
 
 For Debian 9 crossrootfs:
 
 ```
 docker run --rm -v `pwd`:/corefx -w /corefx -e ROOTFS_DIR=/crossrootfs/mips64el aoqi/dotnet-buildtools:x86_64-ubuntu-16.04-c103199-20180628134544-upstream-cross-mips64el-corefx ./src/Native/build-native.sh mips64 debug cross ignorewarnings cmakeargs -DOBJCOPY=/usr/lib/llvm-6.0/bin/llvm-objcopy
+--> Output goes to artifacts/bin/native/Linux-mips64-Debug
 ```
 
 The reason you need to build the managed portion for x64 is because it depends on runtime packages for the new architecture which don't exist yet so we use another existing architecture such as x64 as a proxy for building the managed binaries.
