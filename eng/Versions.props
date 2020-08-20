@@ -1,13 +1,13 @@
 <Project>
   <PropertyGroup>
     <!-- The .NET Core product branding version -->
-    <ProductVersion>3.1.0</ProductVersion>
+    <ProductVersion>3.1.7</ProductVersion>
     <!-- We need to move to 4.7 as part of our versioning change when we switch to arcade to avoid downgrading versions -->
     <MajorVersion>4</MajorVersion>
     <MinorVersion>7</MinorVersion>
     <!-- Always use shipping version instead of dummy version -->
     <DotNetUseShippingVersions>true</DotNetUseShippingVersions>
-    <PreReleaseVersionLabel>rtm</PreReleaseVersionLabel>
+    <PreReleaseVersionLabel>servicing</PreReleaseVersionLabel>
     <!--
         When StabilizePackageVersion is set to 'true', this branch will produce stable outputs for 'Shipping' packages
     -->
@@ -34,16 +34,16 @@
   </PropertyGroup>
   <PropertyGroup>
     <!-- Arcade dependencies -->
-    <MicrosoftDotNetApiCompatPackageVersion>1.0.0-beta.19474.3</MicrosoftDotNetApiCompatPackageVersion>
-    <MicrosoftDotNetCodeAnalysisPackageVersion>1.0.0-beta.19474.3</MicrosoftDotNetCodeAnalysisPackageVersion>
-    <MicrosoftDotNetGenAPIPackageVersion>1.0.0-beta.19474.3</MicrosoftDotNetGenAPIPackageVersion>
-    <MicrosoftDotNetGenFacadesPackageVersion>1.0.0-beta.19474.3</MicrosoftDotNetGenFacadesPackageVersion>
-    <MicrosoftDotNetXUnitExtensionsPackageVersion>2.4.1-beta.19474.3</MicrosoftDotNetXUnitExtensionsPackageVersion>
-    <MicrosoftDotNetXUnitConsoleRunnerPackageVersion>2.5.1-beta.19474.3</MicrosoftDotNetXUnitConsoleRunnerPackageVersion>
-    <MicrosoftDotNetBuildTasksPackagingPackageVersion>1.0.0-beta.19474.3</MicrosoftDotNetBuildTasksPackagingPackageVersion>
-    <MicrosoftDotNetRemoteExecutorPackageVersion>1.0.0-beta.19474.3</MicrosoftDotNetRemoteExecutorPackageVersion>
-    <MicrosoftDotNetBuildTasksFeedVersion>2.2.0-beta.19474.3</MicrosoftDotNetBuildTasksFeedVersion>
-    <MicrosoftDotNetVersionToolsTasksPackageVersion>1.0.0-beta.19474.3</MicrosoftDotNetVersionToolsTasksPackageVersion>
+    <MicrosoftDotNetApiCompatPackageVersion>1.0.0-beta.20213.4</MicrosoftDotNetApiCompatPackageVersion>
+    <MicrosoftDotNetCodeAnalysisPackageVersion>1.0.0-beta.20213.4</MicrosoftDotNetCodeAnalysisPackageVersion>
+    <MicrosoftDotNetGenAPIPackageVersion>1.0.0-beta.20213.4</MicrosoftDotNetGenAPIPackageVersion>
+    <MicrosoftDotNetGenFacadesPackageVersion>1.0.0-beta.20213.4</MicrosoftDotNetGenFacadesPackageVersion>
+    <MicrosoftDotNetXUnitExtensionsPackageVersion>2.4.1-beta.20213.4</MicrosoftDotNetXUnitExtensionsPackageVersion>
+    <MicrosoftDotNetXUnitConsoleRunnerPackageVersion>2.5.1-beta.20213.4</MicrosoftDotNetXUnitConsoleRunnerPackageVersion>
+    <MicrosoftDotNetBuildTasksPackagingPackageVersion>1.0.0-beta.20213.4</MicrosoftDotNetBuildTasksPackagingPackageVersion>
+    <MicrosoftDotNetRemoteExecutorPackageVersion>1.0.0-beta.20213.4</MicrosoftDotNetRemoteExecutorPackageVersion>
+    <MicrosoftDotNetBuildTasksFeedVersion>2.2.0-beta.20213.4</MicrosoftDotNetBuildTasksFeedVersion>
+    <MicrosoftDotNetVersionToolsTasksPackageVersion>1.0.0-beta.20213.4</MicrosoftDotNetVersionToolsTasksPackageVersion>
     <!-- roslyn -->
     <MicrosoftNetCompilersToolsetVersion>3.3.0-beta2-19367-02</MicrosoftNetCompilersToolsetVersion>
     <!-- Core-setup dependencies -->
@@ -51,16 +51,16 @@
     <MicrosoftNETCoreDotNetHostPackageVersion>3.1.0-preview3.19553.2</MicrosoftNETCoreDotNetHostPackageVersion>
     <MicrosoftNETCoreDotNetHostPolicyPackageVersion>3.1.0-preview3.19553.2</MicrosoftNETCoreDotNetHostPolicyPackageVersion>
     <!-- Coreclr dependencies -->
-    <MicrosoftNETSdkILPackageVersion>3.1.0-rtm.19564.2</MicrosoftNETSdkILPackageVersion>
-    <MicrosoftNETCoreILAsmPackageVersion>3.1.0-rtm.19564.2</MicrosoftNETCoreILAsmPackageVersion>
-    <MicrosoftNETCoreRuntimeCoreCLRPackageVersion>3.1.0-rtm.19564.2</MicrosoftNETCoreRuntimeCoreCLRPackageVersion>
+    <MicrosoftNETSdkILPackageVersion>3.1.4-servicing.20366.2</MicrosoftNETSdkILPackageVersion>
+    <MicrosoftNETCoreILAsmPackageVersion>3.1.4-servicing.20366.2</MicrosoftNETCoreILAsmPackageVersion>
+    <MicrosoftNETCoreRuntimeCoreCLRPackageVersion>3.1.4-servicing.20366.2</MicrosoftNETCoreRuntimeCoreCLRPackageVersion>
     <!-- Corefx dependencies -->
     <MicrosoftNETCorePlatformsPackageVersion>3.0.0-preview9.19409.15</MicrosoftNETCorePlatformsPackageVersion>
     <runtimenativeSystemIOPortsPackageVersion>4.6.0-preview9.19409.15</runtimenativeSystemIOPortsPackageVersion>
     <!-- Standard dependencies -->
     <NETStandardLibraryPackageVersion>2.1.0</NETStandardLibraryPackageVersion>
     <!-- dotnet-optimization dependencies -->
-    <optimizationwindows_ntx64IBCCoreFxPackageVersion>99.99.99-master-20190912.1</optimizationwindows_ntx64IBCCoreFxPackageVersion>
+    <optimizationwindows_ntx64IBCCoreFxPackageVersion>3.0.0-release-20190930.1</optimizationwindows_ntx64IBCCoreFxPackageVersion>
     <!-- sni -->
     <RuntimeWinX64RuntimeNativeSystemDataSqlClientSniPackageVersion>4.4.0</RuntimeWinX64RuntimeNativeSystemDataSqlClientSniPackageVersion>
     <RuntimeNativeSystemDataSqlClientSniPackageVersion>4.4.0</RuntimeNativeSystemDataSqlClientSniPackageVersion>
@@ -72,7 +72,7 @@
     <NewtonsoftJsonPackageVersion>12.0.1</NewtonsoftJsonPackageVersion>
     <MicrosoftDotNetPlatformAbstractionsPackageVersion>3.0.0-preview6-27804-01</MicrosoftDotNetPlatformAbstractionsPackageVersion>
     <!-- Test data -->
-    <SystemIOCompressionTestDataPackageVersion>1.0.16</SystemIOCompressionTestDataPackageVersion>
+    <SystemIOCompressionTestDataPackageVersion>5.0.0-beta.20105.1</SystemIOCompressionTestDataPackageVersion>
     <SystemIOPackagingTestDataPackageVersion>1.0.4</SystemIOPackagingTestDataPackageVersion>
     <SystemSecurityCryptographyX509CertificatesTestDataPackageVersion>1.0.7</SystemSecurityCryptographyX509CertificatesTestDataPackageVersion>
     <SystemNetTestDataPackageVersion>1.0.6</SystemNetTestDataPackageVersion>
@@ -83,7 +83,7 @@
     <CoverletConsolePackageVersion>1.5.0</CoverletConsolePackageVersion>
     <DotNetReportGeneratorGlobalToolPackageVersion>4.1.4</DotNetReportGeneratorGlobalToolPackageVersion>
     <!-- Docs -->
-    <MicrosoftPrivateIntellisensePackageVersion>3.1.0-preview1-191022-1</MicrosoftPrivateIntellisensePackageVersion>
+    <MicrosoftPrivateIntellisensePackageVersion>3.1.1-preview-191205-1</MicrosoftPrivateIntellisensePackageVersion>
     <!-- ILLink -->
     <ILLinkTasksPackageVersion>0.1.5-preview-1461378</ILLinkTasksPackageVersion>
   </PropertyGroup>
