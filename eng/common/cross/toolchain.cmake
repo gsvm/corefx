@@ -60,7 +60,9 @@ endmacro()
 add_compile_param(CROSS_LINK_FLAGS "--sysroot=${CROSS_ROOTFS}")
 add_compile_param(CROSS_LINK_FLAGS "--gcc-toolchain=${CROSS_ROOTFS}/usr")
 add_compile_param(CROSS_LINK_FLAGS "--target=${TOOLCHAIN}")
+if(NOT ${TARGET_ARCH_NAME} MATCHES "mips64")
 add_compile_param(CROSS_LINK_FLAGS "-fuse-ld=gold")
+endif()
 
 if(TARGET_ARCH_NAME STREQUAL "armel")
   if(DEFINED TIZEN_TOOLCHAIN) # For Tizen only

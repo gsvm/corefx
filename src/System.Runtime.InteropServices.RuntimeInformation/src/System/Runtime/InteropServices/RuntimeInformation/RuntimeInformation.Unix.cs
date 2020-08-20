@@ -61,6 +61,10 @@ namespace System.Runtime.InteropServices
                             case Interop.Sys.ProcessorArchitecture.ARM64:
                                 s_osArch = Architecture.Arm64;
                                 break;
+
+                            case Interop.Sys.ProcessorArchitecture.MIPS64:
+                                s_osArch = Architecture.Mips64;
+                                break;
                         }
                     }
                 }
@@ -95,6 +99,10 @@ namespace System.Runtime.InteropServices
 
                             case Interop.Sys.ProcessorArchitecture.ARM64:
                                 s_processArch = Architecture.Arm64;
+                                break;
+
+                            case Interop.Sys.ProcessorArchitecture.MIPS64:
+                                s_processArch = Architecture.Mips64;
                                 break;
                         }
                     }

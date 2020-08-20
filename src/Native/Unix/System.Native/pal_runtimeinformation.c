@@ -53,6 +53,8 @@ int32_t SystemNative_GetOSArchitecture()
     return ARCH_X64;
 #elif defined(_X86_)
     return ARCH_X86;
+#elif defined(_MIPS64_)
+    return ARCH_MIPS64;
 #else
 #error Unidentified Architecture
 #endif
@@ -73,6 +75,8 @@ int32_t SystemNative_GetProcessArchitecture()
     return ARCH_X64;
 #elif defined(_X86_)
     return ARCH_X86;
+#elif defined(_MIPS64_)
+    return ARCH_MIPS64;
 #else
 #error Unidentified Architecture
 #endif

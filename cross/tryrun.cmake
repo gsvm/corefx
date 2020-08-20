@@ -12,7 +12,7 @@ else()
    SET(ALPINE_LINUX 0)
 endif()
 
-if(TARGET_ARCH_NAME MATCHES "^(armel|arm|arm64|x86)$")
+if(TARGET_ARCH_NAME MATCHES "^(armel|arm|arm64|x86|mips64)$")
   set_cache_value(HAVE_CLOCK_MONOTONIC_EXITCODE 0)
   set_cache_value(HAVE_CLOCK_REALTIME_EXITCODE 0)
 

@@ -130,5 +130,10 @@ namespace System.Reflection.PortableExecutable
         /// ARM64
         /// </summary>
         Arm64 = 0xAA64,
+
+        /// <summary>
+        /// MIPS64
+        /// </summary>
+        Mips64 = 0xDD64,
     }
 }

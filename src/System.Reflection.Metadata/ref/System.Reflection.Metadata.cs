@@ -3247,6 +3247,7 @@ namespace System.Reflection.PortableExecutable
         Amd64 = (ushort)34404,
         M32R = (ushort)36929,
         Arm64 = (ushort)43620,
+        Mips64 = (ushort)56676,
     }
     public partial class ManagedPEBuilder : System.Reflection.PortableExecutable.PEBuilder
     {

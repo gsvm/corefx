@@ -33,6 +33,10 @@ namespace System.Runtime.InteropServices.RuntimeInformationTests
                     Assert.Equal(IntPtr.Size == 4 ? Architecture.Arm : Architecture.Arm64, processArch);
                     break;
 
+                case Architecture.Mips64:
+                    Assert.Equal(Architecture.Mips64, processArch);
+                    break;
+
                 default:
                     Assert.False(true, "Unexpected Architecture.");
                     break;

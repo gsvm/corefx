@@ -260,6 +260,9 @@ while :; do
         arm64|-arm64)
             __BuildArch=arm64
             ;;
+        mips64|-mips64)
+            __BuildArch=mips64
+            ;;
         debug|-debug)
             __BuildType=Debug
             ;;
